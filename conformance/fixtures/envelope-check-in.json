@@ -1,0 +1,16 @@
+{
+  "method": "POST",
+  "path": "/api/{project}/envelope/",
+  "query": { "sentry_key": "{key}" },
+  "headers": { "Content-Type": "application/x-sentry-envelope" },
+  "envelope": [
+    {},
+    { "type": "check_in" },
+    {
+      "monitor_slug": "fivem-server",
+      "status": "ok",
+      "environment": "production",
+      "monitor_config": { "schedule": { "type": "interval", "value": 1, "unit": "minute" }, "checkin_margin": 5, "timezone": "UTC", "heartbeat": true }
+    }
+  ]
+}

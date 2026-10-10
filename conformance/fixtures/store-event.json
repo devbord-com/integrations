@@ -1,0 +1,32 @@
+{
+  "method": "POST",
+  "path": "/api/{project}/store/",
+  "query": { "sentry_key": "{key}", "sentry_version": "7" },
+  "headers": { "Content-Type": "application/json" },
+  "json": {
+    "platform": "fivem",
+    "logger": "script",
+    "level": "error",
+    "environment": "production",
+    "release": "my-server@1.4.0",
+    "server_name": "RP 1",
+    "exception": {
+      "values": [
+        {
+          "type": "ScriptError",
+          "value": "attempt to index a nil value (local 'player')",
+          "stacktrace": {
+            "frames": [
+              { "filename": "shops/server/main.lua", "function": "handler", "lineno": 12, "in_app": true },
+              { "filename": "shops/server/buy.lua", "function": "buyItem", "lineno": 48, "in_app": true }
+            ]
+          }
+        }
+      ]
+    },
+    "tags": { "side": "server", "resource": "shops", "resource.version": "2.1.0", "framework": "qbox", "game": "gta5" },
+    "contexts": { "server": { "players": 42, "max_players": 64, "uptime_minutes": 318 } },
+    "user": { "id": "license:0123456789abcdef", "username": "Sam" },
+    "sdk": { "name": "devbord.fivem", "version": "1.1.0" }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "method": "POST",
+  "path": "/api/{project}/envelope/",
+  "headers": { "Content-Type": "application/x-sentry-envelope", "X-Sentry-Auth": "Sentry sentry_version=7, sentry_key={key}" },
+  "envelope": [
+    { "event_id": "5c6f0d3a9b1e4f7a8d2c3b4a5e6f7081" },
+    { "type": "event" },
+    {
+      "event_id": "5c6f0d3a9b1e4f7a8d2c3b4a5e6f7081",
+      "platform": "java",
+      "level": "warning",
+      "environment": "production",
+      "release": "survival@3.2.1",
+      "server_name": "survival-1",
+      "message": "Chunk save took 4.2 s",
+      "tags": { "plugin": "WorldGuard", "plugin.version": "7.0.9" },
+      "sdk": { "name": "devbord.minecraft", "version": "1.0.0" }
+    }
+  ]
+}
