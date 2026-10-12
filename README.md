@@ -13,8 +13,10 @@ An integration can do three things, each on its own:
 | [Heartbeat](#heartbeat) | A monitor that raises an issue when the server stops reporting | DSN |
 | [Bug reports](#bug-reports) | A card on a board | API key with the "Report only" scope |
 
-If an official Sentry SDK exists for your platform, use it with a devbord DSN: devbord speaks the protocol of those
-SDKs. Write an integration only where no SDK fits, such as scripting inside a game server.
+For the browser and Node.js, use [`@devbord/browser` or `@devbord/node`](https://github.com/devbord-com/javascript).
+For any other platform with an official Sentry SDK, use that SDK with a devbord DSN: devbord speaks the protocol of
+those SDKs, and the two packages are built on them. Write an integration only where no SDK fits, such as scripting
+inside a game server.
 
 ## The DSN
 
